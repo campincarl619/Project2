@@ -1,0 +1,20 @@
+Sub columnFix()
+
+Dim i As Integer
+
+i = 1805
+
+Do While i <> 1
+
+    If Not(i = 1 Or i = 4 Or i = 5 Or i = 6 Or i = 7 Or i = 19 Or i = 22 Or i = 23 Or i = 37 Or i = 60 Or i = 377 Or i = 1605 Or i = 1607 Or i = 1740 Or i = 1741 Or i = 1776) Then
+        Columns(i).EntireColumn.Delete
+    End If
+    
+    i = i - 1
+    
+Loop
+
+MsgBox ("Done")
+End Sub
+
+
